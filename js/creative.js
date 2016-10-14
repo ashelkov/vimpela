@@ -61,4 +61,16 @@
         }
     });
 
+    // Initialize owl.carousel for product info section
+    $('.owl-carousel').owlCarousel({
+        items: 1,
+        loop: true,
+        dots: true,
+        margin: 10,
+        autoplay: true,
+        autoplaySpeed: 800,
+        autoplayTimeout: 6000,
+        dotsSpeed: 600
+    });
+
 })(jQuery); // End of use strict

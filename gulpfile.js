@@ -65,6 +65,11 @@ gulp.task('copy', function() {
         .pipe(gulp.dest('vendor/scrollreveal'))
 
     gulp.src([
+        'node_modules/owl.carousel/dist/owl.carousel.min.js',
+        'node_modules/owl.carousel/dist/assets/owl.carousel.min.css'
+    ]).pipe(gulp.dest('vendor/owl.carousel'))
+
+    gulp.src([
             'node_modules/font-awesome/**',
             '!node_modules/font-awesome/**/*.map',
             '!node_modules/font-awesome/.npmignore',

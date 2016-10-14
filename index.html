@@ -20,6 +20,7 @@
     <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 
     <!-- Plugin CSS -->
+    <link href="vendor/owl.carousel/owl.carousel.min.css" rel="stylesheet">
     <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
 
     <!-- Theme CSS -->
@@ -36,17 +37,15 @@
 
 <body id="page-top">
 
+    <!-- MAIN NAVIGATION -->
     <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand page-scroll" href="#page-top">СПОРТВЫМПЕЛ</a>
             </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
@@ -63,11 +62,10 @@
                     </li>
                 </ul>
             </div>
-            <!-- /.navbar-collapse -->
         </div>
-        <!-- /.container-fluid -->
     </nav>
 
+    <!-- HEADER SECTION -->
     <header>
         <div class="header-content">
             <div class="header-content-inner">
@@ -82,26 +80,44 @@
         </div>
     </header>
 
+    <!-- ABOUT SECTION -->
     <section class="bg-primary" id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <h2 class="section-heading">Изготовление вымпелов</h2>
-                    <hr class="light">
-                    <p class="text-faded">
-                        Вымпел изготавливается из атласа, уплотняется флизилином, дублерином и может иметь картонную
-                        уплотняющую прокладку.
-                    <p/>
-                    <p class="text-faded">
-                        Печать вымпелов производится сублимационным методом, методом трафаретной
-                        печати до 6 красок, включая и краску под "золото" или комбинируя эти два метода.
-                    </p>
-                    <a href="#services" class="page-scroll btn btn-default btn-xl sr-button">Узнать еще...</a>
+        <div class="container text-center">
+            <div class="owl-carousel owl-theme">
+                <div class="carousel-item">
+                    <div class="media">
+                        <div class="media-left"><img src="img/info/01.jpg" alt="" class="media-object"></div>
+                        <div class="media-body media-middle">
+                            <h2 class="media-heading">Изготовление вымпелов</h2>
+                            <p class="text-faded">Вымпел изготавливается из атласа, уплотняется флизилином, дублерином и может иметь картонную уплотняющую прокладку.<p/>
+                            <p class="text-faded">Обшивка края вымпела производится шнуром, бахромой или комбинированная - шнур и бахрома.<p/>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="media">
+                        <div class="media-left"><img src="img/info/02.jpg" alt="" class="media-object"></div>
+                        <div class="media-body media-middle">
+                            <h2 class="media-heading">Сублимационная и трафаретная печать</h2>
+                            <p class="text-faded">Печать вымпелов производится сублимационным методом или методом трафаретной печати до 6 красок.</p>
+                            <p class="text-faded">Возможна печать краской под "золото", печать "объемными" красками, а также применение прочих спецеффектов.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="media">
+                        <div class="media-left"><img src="img/info/03.jpg" alt="" class="media-object"></div>
+                        <div class="media-body media-middle">
+                            <h2 class="media-heading">Разнообразие форм и размеров</h2>
+                            <p class="text-faded">Мы предлагаем нашим клиентам широкий выбор размеров и формы вымпела: от маленьких автомобильных до больших командных вымпелов. Дизайн вымпела мы адаптируем к его форме и размеру.<p/>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- SERVICES SECTION -->
     <section id="services">
         <div class="container">
             <div class="row">
@@ -145,6 +161,7 @@
         </div>
     </section>
 
+    <!-- GALLERY SECTION -->
     <section class="no-padding" id="portfolio">
         <div class="container-fluid">
             <div class="row no-gutter popup-gallery">
@@ -251,6 +268,7 @@
         </div>
     </aside>
 
+    <!-- CONTACTS SECTION -->
     <section id="contact">
         <div class="container">
             <div class="row">
@@ -281,6 +299,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
     <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
     <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="vendor/owl.carousel/owl.carousel.min.js"></script>
 
     <!-- Theme JavaScript -->
     <script src="js/creative.min.js"></script>

@@ -360,3 +360,98 @@ img::-moz-selection {
 body {
     webkit-tap-highlight-color: @gray-darker;
 }
+
+
+// ABOUT SECTION
+section#about {
+    padding: 60px 0;
+}
+
+// OWL CAROUSEL ITEM
+.carousel-item {
+    max-width: 900px;
+    margin: 0 auto;
+
+    .media-left {
+        padding-right: 25px;
+
+        img {
+            object-fit: cover;
+            width: 200px;
+            height: 200px;
+            border: solid 0.5em rgba(255, 255, 255, 0.5);
+            border-radius: 100%;
+        }
+    }
+
+    .media-body {
+        text-align: left;
+
+        .media-heading {
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: rgba(255,255,255,.8);
+        }
+    }
+
+    // tablet
+    @media (max-width: 768px) {
+        .media-body {
+            .media-heading {
+                font-size: 26px;
+            }
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+
+    // mobile
+    @media (max-width: 550px) {
+        .media-left {
+            display: block;
+            padding: 0;
+            img {
+                margin: 0 auto 15px;
+            }
+        }
+
+        .media-body {
+            text-align: center;
+        }
+    }
+}
+
+
+// OWL CAROUSEL THEME
+
+.owl-theme .owl-dots {
+    text-align: center;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.owl-theme .owl-dots .owl-dot {
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    width: 9px;
+    height: 9px;
+    margin: 5px 7px;
+    background: #fff;
+    display: block;
+    -webkit-backface-visibility: visible;
+    transition: .2s;
+    border-radius: 50%;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+    transform: scale(1.3);
+}
